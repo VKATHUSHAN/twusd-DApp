@@ -1,11 +1,10 @@
 import { createAppKit } from '@reown/appkit/react'
-import { WagmiProvider } from 'wagmi'
 import { mainnet } from '@reown/appkit/networks'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { QueryClient } from '@tanstack/react-query'
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi'
 
 // 0. Setup queryClient
-const queryClient = new QueryClient()
+export const queryClient = new QueryClient()
 
 // 1. Get projectId from https://cloud.reown.com
 const projectId = import.meta.env.VITE_REOWN_PROJECT_ID || 'YOUR_PROJECT_ID'
@@ -33,4 +32,3 @@ createAppKit({
   }
 })
 
-export { WagmiProvider, QueryClient, QueryClientProvider, queryClient }
