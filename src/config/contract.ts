@@ -54,6 +54,5 @@ export const TWUSD_ABI = [
   }
 ] as const;
 
-// TODO: Replace with actual deployed TWUSD contract address on Ethereum Mainnet
-// This is a placeholder address - the dApp will not function until a real contract is deployed
-export const TWUSD_CONTRACT_ADDRESS = "0x0000000000000000000000000000000000000000" as const;
+// TWUSD (TheUSDOXWrappedDollarEVM) contract address on Ethereum Mainnet
+export const TWUSD_CONTRACT_ADDRESS = "0x7BeB51807E3c8BdB10A2868bD51c2D9E1764925D" as const;
